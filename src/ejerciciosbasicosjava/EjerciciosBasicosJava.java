@@ -18,6 +18,18 @@ public class EjerciciosBasicosJava {
             return false;
         }
     
+   
+    
+    public int multa (int velocidad, boolean birthday){
+        
+       
+        return 0;
+        }
+    
+     
+        
+    
+    
     /**
      * @param args the command line arguments
      */
