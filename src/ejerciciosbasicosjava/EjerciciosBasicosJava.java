@@ -92,7 +92,28 @@ public class EjerciciosBasicosJava {
              }
               return false;       
          }
+    // ejercicio 7
+         public boolean multiploMultiple (int numero){
+         if (numero % 3==0 && numero %5 ==0){//el numero es multiplo de 3 y 5
+             return false;
+         }
+         if (numero % 3 == 0 || numero %5 ==0){// el numero es multiplo de 3 o 5 
+             //pero no de los dos
+             return  true;
+         }
+         return false;
+             }
+         
+         // ejercicio 8
     
+         public boolean menos20 (int numero){
+         if ((numero %20==20-1) ||(numero %20==20-2)){
+    return true;
+  }
+  
+  return false;
+}
+
          
     
     
@@ -134,7 +155,17 @@ public class EjerciciosBasicosJava {
         System.out.println("digitoIgual (12, 43) " + ejercicios.digitoIgual(12, 43) );
         System.out.println("digitoIgual (12, 44) " + ejercicios.digitoIgual(12, 44) );
         
-    
+        //testeo el ejercicio 7 
+        System.out.println("multiploMultiple (3) " + ejercicios.multiploMultiple(3) ); 
+        System.out.println("multiploMultiple (10)" + ejercicios.multiploMultiple(10) );
+        System.out.println("multiploMultiple (15)" + ejercicios.multiploMultiple (15) );
+        
+    //testeo ejercicio 8
+       //testeo el ejercicio 7 
+        System.out.println("menos20 (18) " + ejercicios.menos20(18) ); 
+        System.out.println("menos20(19)" + ejercicios.menos20(19) );
+        System.out.println("menos20 (20)" + ejercicios.menos20(20) );
+        
 }
 
 }
