@@ -113,11 +113,39 @@ public class EjerciciosBasicosJava {
   
   return false;
 }
-
+//ejercicio 9
+          public int loteria (int a,int b, int c){
+                 if ((a==2)&& (b==2)&&(c==2)){
+                 return 10;
+             }
+                if ((a==b)&&(a==c)&&(b==c)){
+               return 5;
+                }
+              if ((a==b)||(a==c)||(b==c)){
+                  return 1;
+              }
+          
+             return 0;
+          }
+           
+          //ejercicio 10
+       public int withoutDoubles (int a, int b,boolean dados){
          
+    if (dados==true){
+           if (a==b && b==a){
+               return a+b+1;
+           }
+              
+         }else{
+        return a+b;
+    }
     
+        return a+b;
+    }
+     
+   
     
-
+           
     
     /**
      * @param args the command line arguments
@@ -161,10 +189,22 @@ public class EjerciciosBasicosJava {
         System.out.println("multiploMultiple (15)" + ejercicios.multiploMultiple (15) );
         
     //testeo ejercicio 8
-       //testeo el ejercicio 7 
+       
         System.out.println("menos20 (18) " + ejercicios.menos20(18) ); 
         System.out.println("menos20(19)" + ejercicios.menos20(19) );
         System.out.println("menos20 (20)" + ejercicios.menos20(20) );
+        
+        // testeo ejercicio 9
+        System.out.println("loteria (2,2,2) " + ejercicios.loteria(2,2,2) ); 
+        System.out.println("loteria(2,2,1)" + ejercicios.loteria(2,2,1) );
+        System.out.println("loteria (0,0,0)" + ejercicios.loteria(0,0,0) );
+        
+        //testeo ejercicio 10
+        
+       System.out.println("withoutDoubles (2,3,true) " + ejercicios.withoutDoubles(2,3,true) ); 
+       System.out.println("withoutDoubles(3,3,true)" + ejercicios.withoutDoubles(3,3,true) );
+       System.out.println("withoutDoubles (3,3,false)" + ejercicios.withoutDoubles(3,3,false) );
+       System.out.println("withoutDoubles (6,6,true)" + ejercicios.withoutDoubles(6,6,true) );
         
 }
 
